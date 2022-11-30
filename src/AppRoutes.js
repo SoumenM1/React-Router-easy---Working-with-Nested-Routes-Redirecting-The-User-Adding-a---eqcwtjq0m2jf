@@ -1,11 +1,18 @@
 import React from 'react';
-
+import Home from './Home';
+import Index from './Index';
+import NotFound from './NotFound'
 export const AppRoutes = () => {
     return (
           <Switch>
-          <Route path="/">
+          <Route exact path="/">
+        </Index>
          </Route>
-         <Route path="/Home">
+         <Route exact path="/Home">
+        </Home>
+         </Route>
+         <Route >
+        </NotFound>
          </Route>
         </Switch>
     )
